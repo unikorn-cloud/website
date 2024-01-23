@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unikorn Cloud</title>
+<link rel="icon" href="https://raw.githubusercontent.com/unikorn-cloud/assets/main/images/logos/light-on-dark/icon.svg">
+<script src="js/iconify-icon.min.js"></script>
+<style type="text/css">
+	:root {
+		--color: rgb(224, 224, 224);
+		--background: rgb(49, 80, 89);
+		--brand: rgb(73, 118, 132);
+		--brand-hover: rgb(49, 80, 89);
+		--radius: 1em;
+		--padding: 1em;
+	}
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Helvetica;
+		background-color: var(--background);
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		align-items: center;
+		color: var(--color);
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	footer {
+		padding: var(--padding);
+	}
+	img#logo {
+		padding: 2em;
+		width: 80%;
+		height: auto;
+	}
+	span#tagline {
+		font-size: 1.4em;
+		text-align: center;
+		padding: 0 var(--padding);
+	}
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.2em;
+	}
+	h3 {
+		font-size: 1.8em;
+	}
+	h4 {
+		font-size: 1.4em;
+	}
+	h5 {
+		font-size: 1em;
+	}
+	h1, h2, h2, h2, h5 {
+		text-align: center;
+		margin: 0;
+		color: var(--brand);
+	}
+	iconify-icon {
+		font-size: 5em;
+		color: var(--brand);
+		margin: 0 auto;
+		filter: drop-shadow(2px 2px 2px #888);
+	}
+	a {
+		color: var(--brand);
+	}
+	a:hover {
+		color: var(--brand-hover);
+	}
+	p {
+		text-align: center;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+                gap: var(--padding);
+                align-items: stretch;
+	}
+	.banner {
+		color: rgb(64, 64, 64);
+		background-color: white;
+		width: 100%;
+		padding: var(--padding);
+		display: flex;
+		flex-direction: column;
+		gap: var(--padding);
+		align-items: center;
+		background-image: url("img/cloud-background.jpg");
+	}
+	.highlights {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+	.highlight {
+		border: 1px solid var(--brand);
+		border-radius: var(--radius);
+		background-color: rgba(255, 255, 255, 0.9);
+		padding: var(--padding);
+		display: flex;
+		flex-direction: column;
+                gap: var(--padding);
+		align-items: stretch;
+		box-shadow: 0 0 var(--radius) #888;
+	}
+	@media only screen and (min-width: 1080px) {
+		img#logo {
+			max-width: 50%;
+		}
+		main {
+			width: 1080px;
+		}
+		.highlights {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			gap: 1em;
+		}
+	}
+</style>
+</head>
+<body>
+	<header>
+		<img id="logo" src="https://raw.githubusercontent.com/unikorn-cloud/assets/main/images/logos/light-on-dark/logo.svg" alt="Unikorn Logo" />
+		<span id="tagline">Open Source Platform as a Service Provider</span>
+	</header>
+
+	<section class="banner">
+		<main>
+			<h1>What is Unikorn?</h1>
+			<p>
+				Unikorn is a suite of applications that manage the life-cycle of on-demand cloud resources.
+				Its core responsibility is the provisioning of Kubernetes workload clusters in a simple to use, cloud provider agnostic way.
+			</p>
+
+			<section class="highlights">
+				<section class="highlight">
+					<iconify-icon icon="mdi:cloud-outline"></iconify-icon>
+					<h2>Cloud-Native</h2>
+					<p>
+						Developed exclusively for deployment and execution on Kubernetes.
+						Embraces best-practices of stateless services, automatic scaling and high availability.
+					</p>
+					<p>
+						Unikorn integrates seemlessly with standard Fluentd logging, Prometheus monitoring, and OpenTelemetry solutions for observability.
+					</p>
+				</section>
+				<section class="highlight">
+					<iconify-icon icon="mdi:lock-open-outline"></iconify-icon>
+					<h2>Secure</h2>
+					<p>
+						Draws upon industry standard secrity protocols such as OIDC and Oauth2 to provide secure identity services with enterprise ready direct integration with Google and Microsoft identity services.
+					</p>
+					<p>
+						You can integrate with your own OIDC complicant identity service too.
+					</p>
+				</section>
+				<section class="highlight">
+					<iconify-icon icon="raphael:opensource"></iconify-icon>
+					<h2>Open Source</h2>
+					<p>
+						Fully open, and licensed under the Apache-2 software license.
+						We welcome all suggestions and collaborations.
+					</p>
+					<p>
+						Unikorn uses Open Source components such as ArgoCD and Cluster API.
+					</p>
+					<p>
+						View the source on <a href="https://github.com/unikorn-cloud">Github</a>
+					</p>
+				</section>
+			</section>
+		</main>
+	</section>
+
+	<footer>
+		Copyright &copy; 2024 The Unikorn Cloud Authors.
+	</footer>
+</body>
+</html>
