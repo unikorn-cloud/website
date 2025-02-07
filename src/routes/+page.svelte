@@ -106,7 +106,12 @@
 		</Section>
 
 		<div class="bg-[linear-gradient(rgb(63,128,128),rgb(40,80,80))] text-white">
-			<Section title="Designed for AI/ML" image="/gpu.webp" image_alt="A GPU" image_class="h-48 w-auto">
+			<Section
+				title="Designed for AI/ML"
+				image="/gpu.webp"
+				image_alt="A GPU"
+				image_class="h-48 w-auto"
+			>
 				{#snippet headline()}
 					Although Unikorn can be used for general purpose compute, its core focus will always be on
 					AI. GPUs are <em>first-class</em> citizens, and the intention is always to provide higher level
@@ -122,25 +127,32 @@
 			</Section>
 		</div>
 
-		<Section title="Easy to Use" image="/ui.webp" image_alt="unikorn ui" image_class="max-h-64 w-auto" image_position="start">
+		<Section
+			title="Easy to Use"
+			image="/ui.webp"
+			image_alt="unikorn ui"
+			image_class="max-h-64 w-auto"
+			image_position="start"
+		>
 			{#snippet headline()}
 				We've been inspired by the best designs in the world.
 			{/snippet}
 
 			<p>
-				No one wants to read reams of documentation to understand how something works.
-				We get you, and our mission is to provide simple and intuitive interfaces that anyone can use.
-				We've reduced the input you need to provide to get up and running quickly to the bare minimum.
+				No one wants to read reams of documentation to understand how something works. We get you,
+				and our mission is to provide simple and intuitive interfaces that anyone can use. We've
+				reduced the input you need to provide to get up and running quickly to the bare minimum.
 				Fewer distractions, more productivity.
 			</p>
 
 			<p>
-				We want Unikorn to be <em>the</em> tool we &ndash; as engineers &ndash; want to use.
-				But where that's not sufficient, Unikorn provides a rich REST API to enable your creativity and provide automation.
+				We want Unikorn to be <em>the</em> tool we &ndash; as engineers &ndash; want to use. But where
+				that's not sufficient, Unikorn provides a rich REST API to enable your creativity and provide
+				automation.
 			</p>
 		</Section>
 	</main>
-	<footer class="flex flex-col items-center px-4 py-4 lg:px-64 text-gray-500">
+	<footer class="flex flex-col items-center px-4 py-4 text-gray-500 lg:px-64">
 		&copy; The Unikorn Authors 2025
 	</footer>
 </div>

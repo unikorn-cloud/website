@@ -23,5 +23,7 @@
 		{@render content()}
 	</div>
 
-	<a class="justify-self-start self-start  rounded bg-[rgb(63,128,128)] p-4" href={link}> Learn More </a>
+	<a class="self-start justify-self-start rounded bg-[rgb(63,128,128)] p-4" href={link}>
+		Learn More
+	</a>
 </article>
