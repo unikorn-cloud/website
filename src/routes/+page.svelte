@@ -18,7 +18,7 @@
 		<section
 			id="hero"
 			class="flex flex-col gap-4 bg-cover bg-center px-4 py-32 lg:px-64 lg:py-64"
-			style="background-image: linear-gradient(rgba(24,63,63,0.8), rgba(0,0,0,0.6)), url(/hero.jpg)"
+			style="background-image: linear-gradient(rgba(24,63,63,0.8), rgba(0,0,0,0.6)), url(/hero.webp)"
 		>
 			<h1 class="text-3xl font-bold lg:text-6xl">Open Source Infrastructure as a Service</h1>
 			<h2 class="text-2xl italic text-[rgb(172,204,204)] lg:text-5xl">Simplified</h2>
